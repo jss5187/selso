@@ -13,8 +13,18 @@ const Profile: React.FC = () => {
         <h2 className="section-title">프로필</h2>
         <div className="profile-content">
           <div className="profile-image">
-            <div className="image-placeholder">
-              <p>사진을 여기에 넣어주세요</p>
+            <div className="image-container">
+              <img
+                src="/profile-image.jpeg"
+                alt="정성산 프로필 사진"
+                className="profile-photo"
+                onError={(e) => {
+                  // 이미지 로드 실패시 플레이스홀더 표시
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = "none";
+                  target.nextElementSibling?.classList.remove("hidden");
+                }}
+              />
             </div>
           </div>
           <div className="profile-info">
