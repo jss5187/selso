@@ -657,53 +657,126 @@ section {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 24px;
+    padding: 0 20px;
   }
 
   section {
-    margin: 40px 0;
-    padding: 32px 0;
-    border-radius: 16px;
+    margin: 30px 0;
+    padding: 24px 0;
+    border-radius: 12px;
   }
 
   .header {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 
   .title {
-    font-size: 2rem;
-  }
-
-  .section-title {
     font-size: 1.8rem;
   }
 
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+
   .image-placeholder {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .hobby-card,
   .food-card,
   .trait-card,
   .social-link-card {
-    padding: 24px 20px;
+    padding: 20px 16px;
+  }
+
+  .hobby-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .hobby-title {
+    font-size: 1.2rem;
+  }
+
+  .hobby-description {
+    font-size: 0.95rem;
   }
 
   .social-links-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .interests-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
   }
 
   .interest-card {
-    padding: 20px 16px;
+    padding: 16px 12px;
+  }
+
+  .interest-name {
+    font-size: 1rem;
+  }
+
+  .interest-description {
+    font-size: 0.85rem;
+  }
+
+  .contact-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+}
+
+/* 매우 작은 화면 (320px 이하) */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .image-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .hobby-card,
+  .food-card,
+  .trait-card,
+  .social-link-card {
+    padding: 16px 12px;
+  }
+
+  .hobby-emoji {
+    font-size: 2rem;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
   }
 }
 
