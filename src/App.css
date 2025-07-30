@@ -653,11 +653,26 @@ section {
     flex-direction: column;
     text-align: center;
     gap: 40px;
+    align-items: center;
   }
 
   .profile-info {
     min-width: auto;
     width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bio {
+    text-align: center;
+    max-width: 100%;
   }
 
   .image-container {
@@ -739,6 +754,8 @@ section {
     line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    text-align: center;
+    max-width: 100%;
   }
 
   .hobby-card,
@@ -828,6 +845,8 @@ section {
     line-height: 1.5;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    text-align: center;
+    max-width: 100%;
   }
 
   .hobby-card,
