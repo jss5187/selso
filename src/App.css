@@ -22,6 +22,9 @@
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* 헤더 스타일 */
@@ -660,6 +663,8 @@ section {
     text-align: center;
     gap: 40px;
     align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .profile-info {
@@ -669,16 +674,21 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .info-item {
     justify-content: center;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .bio {
     text-align: center;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .image-container {
@@ -762,6 +772,8 @@ section {
     overflow-wrap: break-word;
     text-align: center;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hobby-card,
@@ -853,6 +865,8 @@ section {
     overflow-wrap: break-word;
     text-align: center;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hobby-card,
