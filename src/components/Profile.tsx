@@ -20,7 +20,7 @@ const Profile: React.FC = () => {
               {!imageError && (
                 <img
                   src="/profile-image.jpg"
-                  alt="정성산 프로필 사진"
+                  alt="프로필 사진"
                   className={`profile-photo ${imageLoaded ? "loaded" : ""}`}
                   onLoad={() => setImageLoaded(true)}
                   onError={() => setImageError(true)}
