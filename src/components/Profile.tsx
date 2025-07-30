@@ -15,7 +15,7 @@ const Profile: React.FC = () => {
           <div className="profile-image">
             <div className="image-container">
               <img
-                src="/profile-image.jpeg"
+                src={process.env.PUBLIC_URL + "/profile-image.jpeg"}
                 alt="정성산 프로필 사진"
                 className="profile-photo"
                 onError={(e) => {
@@ -25,6 +25,9 @@ const Profile: React.FC = () => {
                   target.nextElementSibling?.classList.remove("hidden");
                 }}
               />
+              <div className="image-placeholder hidden">
+                <p>사진을 여기에 넣어주세요</p>
+              </div>
             </div>
           </div>
           <div className="profile-info">
