@@ -18,16 +18,17 @@ const Profile: React.FC = () => {
             </div>
           </div>
           <div className="profile-info">
-            <h3 className="name">[이름]</h3>
+            <h3 className="name">정성산</h3>
             <div className="info-item">
-              <span>서울 강서구</span>
+              <span>LG CNS 블록체인 개발자</span>
             </div>
             <div className="info-item">
-              <span>블록체인 개발자</span>
+              <span>블록체인 기술 전문가</span>
             </div>
             <p className="bio">
-              안녕하세요! Node.js를 주로 사용하는 개발자입니다. 새로운 기술을
-              배우는 것을 좋아하고, 사용자 경험을 개선하는 것에 관심이 많습니다.
+              안녕하세요! LG CNS에서 블록체인 개발자로 일하고 있는 정성산입니다.
+              블록체인 기술을 통해 혁신적인 솔루션을 개발하는 것에 열정을 가지고
+              있으며, 새로운 기술 트렌드를 탐구하고 학습하는 것을 즐깁니다.
             </p>
           </div>
         </div>

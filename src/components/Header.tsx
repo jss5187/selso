@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     >
       <div className="header-content">
         <h1 className="title">안녕하세요! 👋</h1>
-        <p className="subtitle">개발자 [이름]의 소개페이지입니다</p>
+        {/* <p className="subtitle">개발자 [이름]의 소개페이지입니다</p> */}
       </div>
     </motion.header>
   );

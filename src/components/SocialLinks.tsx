@@ -5,28 +5,13 @@ const SocialLinks: React.FC = () => {
   const socialLinks = [
     {
       name: "Instagram",
-      url: "https://instagram.com/[your-username]",
+      url: "https://instagram.com/niceonesanny",
       color: "#e4405f",
     },
     {
       name: "GitHub",
-      url: "https://github.com/[your-username]",
+      url: "https://github.com/jss5187",
       color: "#333",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://linkedin.com/in/[your-username]",
-      color: "#0077b5",
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/[your-username]",
-      color: "#1da1f2",
-    },
-    {
-      name: "Email",
-      url: "mailto:[your-email@example.com]",
-      color: "#ea4335",
     },
   ];
 
