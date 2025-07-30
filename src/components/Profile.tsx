@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Profile: React.FC = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
+
   return (
     <motion.section
       className="profile-section"
@@ -14,20 +17,20 @@ const Profile: React.FC = () => {
         <div className="profile-content">
           <div className="profile-image">
             <div className="image-container">
-              <img
-                src={process.env.PUBLIC_URL + "/profile-image.jpeg"}
-                alt="정성산 프로필 사진"
-                className="profile-photo"
-                onError={(e) => {
-                  // 이미지 로드 실패시 플레이스홀더 표시
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = "none";
-                  target.nextElementSibling?.classList.remove("hidden");
-                }}
-              />
-              <div className="image-placeholder hidden">
-                <p>사진을 여기에 넣어주세요</p>
-              </div>
+              {!imageError && (
+                <img
+                  src="/profile-image.jpg"
+                  alt="정성산 프로필 사진"
+                  className={`profile-photo ${imageLoaded ? "loaded" : ""}`}
+                  onLoad={() => setImageLoaded(true)}
+                  onError={() => setImageError(true)}
+                />
+              )}
+              {imageError && (
+                <div className="image-placeholder">
+                  <p>사진을 여기에 넣어주세요</p>
+                </div>
+              )}
             </div>
           </div>
           <div className="profile-info">

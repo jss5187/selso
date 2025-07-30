@@ -137,6 +137,12 @@ section {
   object-fit: cover;
   border: 4px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.profile-photo.loaded {
+  opacity: 1;
 }
 
 .hidden {
