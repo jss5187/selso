@@ -7,31 +7,37 @@ const Hobbies: React.FC = () => {
       title: "사진 촬영",
       description: "여행할 때마다 사진을 찍는 것을 좋아해요",
       color: "#ff6b6b",
+      emoji: "📸",
     },
     {
       title: "게임",
       description: "가끔 게임을 하면서 스트레스를 해소해요",
       color: "#4ecdc4",
+      emoji: "🎮",
     },
     {
       title: "요리",
       description: "새로운 레시피를 시도하는 것을 좋아해요",
       color: "#45b7d1",
+      emoji: "👨‍🍳",
     },
     {
       title: "독서",
       description: "기술 서적과 소설을 즐겨 읽어요",
       color: "#96ceb4",
+      emoji: "📚",
     },
     {
       title: "음악",
       description: "다양한 장르의 음악을 듣는 것을 좋아해요",
       color: "#feca57",
+      emoji: "🎵",
     },
     {
       title: "여행",
       description: "새로운 곳을 탐험하는 것을 좋아해요",
       color: "#ff9ff3",
+      emoji: "✈️",
     },
   ];
 
@@ -57,6 +63,7 @@ const Hobbies: React.FC = () => {
                 boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
               }}
             >
+              <div className="hobby-emoji">{hobby.emoji}</div>
               <h3 className="hobby-title">{hobby.title}</h3>
               <p className="hobby-description">{hobby.description}</p>
             </motion.div>
